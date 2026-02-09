@@ -1,4 +1,4 @@
-import ProductShowcase from "@/components/ProductShowcase";
+import { products } from "@/lib/products";
 import { Button } from "@/components/ui/button";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import Image from "next/image";
@@ -7,9 +7,13 @@ import ContactForm from "@/components/ContactForm";
 import { Instagram } from '@/components/Instagram';
 import { WhatsApp } from '@/components/WhatsApp';
 import { Mail, Phone, ArrowRight } from 'lucide-react';
+import ProductCard from "@/components/ProductCard";
+import { Card } from "@/components/ui/card";
 
 export default function Home() {
   const heroImage = PlaceHolderImages.find(p => p.id === 'hero-main')!;
+  const artisanImage = PlaceHolderImages.find(p => p.id === 'about-artisan')!;
+  const featuredProducts = products.slice(0, 4);
 
   return (
     <div className="space-y-24 md:space-y-32">
@@ -40,7 +44,38 @@ export default function Home() {
             <h2 className="font-headline text-4xl md:text-5xl font-bold text-primary">Creaciones Destacadas</h2>
             <p className="text-lg text-muted-foreground mt-2">Hecho a mano, con paciencia y dedicación.</p>
         </header>
-        <ProductShowcase />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <ProductCard product={featuredProducts[0]} sizes="(max-width: 768px) 100vw, 50vw" />
+          <ProductCard product={featuredProducts[1]} sizes="(max-width: 768px) 100vw, 50vw" />
+
+          <div className="md:col-span-2 group relative">
+              <Link href="/about" className="absolute inset-0 z-10" aria-label="Sobre la artesana">
+                <span className="sr-only">Sobre la artesana</span>
+              </Link>
+              <Card className="h-full flex flex-col md:flex-row items-center overflow-hidden bg-card transition-all duration-300 group-hover:shadow-2xl group-hover:-translate-y-1">
+                  <div className="relative w-full md:w-1/3 aspect-[4/3] md:aspect-auto md:h-full">
+                        <Image
+                          src={artisanImage.imageUrl}
+                          alt={artisanImage.description}
+                          data-ai-hint={artisanImage.imageHint}
+                          fill
+                          className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                  </div>
+                  <div className="flex-1 p-8 md:p-12 text-center md:text-left">
+                      <h3 className="font-headline text-3xl font-bold text-primary mb-4">La Artesana Detrás de la Magia</h3>
+                      <p className="text-muted-foreground mb-6">"Cada puntada y cada página en blanco son una promesa de una nueva historia."</p>
+                      <div className="inline-flex items-center justify-center md:justify-start gap-2 text-primary font-bold">
+                          <span>Conoce mi historia</span>
+                          <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+                      </div>
+                  </div>
+              </Card>
+          </div>
+
+          <ProductCard product={featuredProducts[2]} sizes="(max-width: 768px) 100vw, 50vw" />
+          <ProductCard product={featuredProducts[3]} sizes="(max-width: 768px) 100vw, 50vw" />
+        </div>
       </section>
 
       <div className="text-center bg-card p-12 md:p-16 rounded-lg shadow-lg transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl">
