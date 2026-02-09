@@ -36,6 +36,8 @@ export default function Home() {
         </div>
       </section>
 
+      <InstagramFeed />
+
       <div className="text-center bg-card p-12 md:p-16 rounded-lg shadow-lg transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl">
         <h3 className="font-headline text-3xl md:text-4xl mb-4 text-foreground/90">¿Lista para encontrar tu próxima inspiración?</h3>
         <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">Nuestra colección completa está esperando a ser descubierta. Cada pieza tiene una historia.</p>
@@ -43,8 +45,6 @@ export default function Home() {
           <Link href="/products">Ver Todas las Creaciones</Link>
         </Button>
       </div>
-
-      <InstagramFeed />
 
       <section id="contact" className="space-y-16 scroll-mt-20">
         <header className="text-center space-y-4">
