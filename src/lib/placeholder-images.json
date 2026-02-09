@@ -3,37 +3,37 @@
     {
       "id": "hero-main",
       "description": "Manos de una artesana bordando flores en una tela con una aguja.",
-      "imageUrl": "https://images.unsplash.com/photo-1594943343369-15d5f29f109a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoYW5kcyUyMGVtYnJvaWRlcnl8ZW58MHx8fHwxNzEwOTU4NTMwfDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "/images/hero-main.jpg",
       "imageHint": "hands embroidery"
     },
     {
       "id": "product-notebook-leather",
       "description": "Un cuaderno artesanal con cubierta de cuero marrón sobre una superficie de madera.",
-      "imageUrl": "https://images.unsplash.com/photo-1516943444951-6a689e4c5e39?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxsZWF0aGVyJTIwam91cm5hbHxlbnwwfHx8fDE3MTA5NTg1ODR8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "/images/product-notebook-leather.jpg",
       "imageHint": "leather journal"
     },
     {
       "id": "product-embroidery-hoop",
       "description": "Un bordado de flores de colores en un bastidor de madera, sobre un fondo neutro.",
-      "imageUrl": "https://images.unsplash.com/photo-1619864384919-d1b11a43a2b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmbG9yYWwlMjBlbWJyb2lkZXJ5JTIwaG9vcHxlbnwwfHx8fDE3MTA5NTg2MzZ8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "/images/product-embroidery-hoop.jpg",
       "imageHint": "floral embroidery"
     },
     {
       "id": "product-notebook-fabric",
       "description": "Un cuaderno forrado en tela con un patrón floral.",
-      "imageUrl": "https://images.unsplash.com/photo-1619362339460-f421f24d352c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmYWJyaWMlMjBub3RlYm9va3xlbnwwfHx8fDE3MTA5NTg2OTJ8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "/images/product-notebook-fabric.jpg",
       "imageHint": "fabric notebook"
     },
     {
       "id": "product-embroidery-kit",
       "description": "Un kit de bordado con hilos de colores, agujas, tijeras y un bastidor.",
-      "imageUrl": "https://images.unsplash.com/photo-1601618218828-9c60914c11ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlbWJyb2lkZXJ5JTIwa2l0fGVufDB8fHx8MTcxMDk1ODc0NHww&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "/images/product-embroidery-kit.jpg",
       "imageHint": "embroidery kit"
     },
     {
       "id": "about-artisan",
       "description": "Retrato de una artesana en su taller, rodeada de telas y herramientas de costura.",
-      "imageUrl": "https://images.unsplash.com/photo-1557087383-085777353664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3b21hbiUyMGNyYWZ0ZXJ8ZW58MHx8fHwxNzEwOTU4Nzk2fDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "/images/about-artisan.jpg",
       "imageHint": "woman crafter"
     }
   ]
