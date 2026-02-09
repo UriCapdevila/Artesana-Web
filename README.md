@@ -1,6 +1,6 @@
 # Artesana - El Alma en Cada Detalle
 
-![Artesana Hero](/Artesana.jpeg)
+![Artesana Hero](public/Artesana.jpeg)
 
 **Artesana** es una tienda online para exhibir cuadernos y bordados artesanales. Inspirado en marcas de primer nivel como Apple y Adidas, este proyecto se enfoca en ofrecer una experiencia de usuario premium, limpia y elegante, manteniendo al mismo tiempo una estética natural y terrenal que refleja el alma de la artesanía.
 
