@@ -9,31 +9,31 @@
     {
       "id": "product-notebook-leather",
       "description": "Un cuaderno artesanal con cubierta de cuero marrón sobre una superficie de madera.",
-      "imageUrl": "/images/product-notebook-leather.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1720534195942-d55d1760df95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxsZWF0aGVyJTIwam91cm5hbHxlbnwwfHx8fDE3NzA2MDI4NjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "leather journal"
     },
     {
       "id": "product-embroidery-hoop",
       "description": "Un bordado de flores de colores en un bastidor de madera, sobre un fondo neutro.",
-      "imageUrl": "/images/product-embroidery-hoop.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1692605852684-48459c9ece6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmbG9yYWwlMjBlbWJyb2lkZXJ5fGVufDB8fHx8MTc3MDY3Mjk1NXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "floral embroidery"
     },
     {
       "id": "product-notebook-fabric",
       "description": "Un cuaderno forrado en tela con un patrón floral.",
-      "imageUrl": "/images/product-notebook-fabric.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1636108527045-dc895e41503c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmYWJyaWMlMjBub3RlYm9va3xlbnwwfHx8fDE3NzA2NzI5NTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "fabric notebook"
     },
     {
       "id": "product-embroidery-kit",
       "description": "Un kit de bordado con hilos de colores, agujas, tijeras y un bastidor.",
-      "imageUrl": "/images/product-embroidery-kit.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1768943367129-2a63c4fc80eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlbWJyb2lkZXJ5JTIwa2l0fGVufDB8fHx8MTc3MDY3Mjk1NXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "embroidery kit"
     },
     {
       "id": "about-artisan",
       "description": "Retrato de una artesana en su taller, rodeada de telas y herramientas de costura.",
-      "imageUrl": "/images/about-artisan.jpg",
+      "imageUrl": "https://picsum.photos/seed/aa/600/800",
       "imageHint": "woman crafter"
     }
   ]
