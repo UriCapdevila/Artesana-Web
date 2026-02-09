@@ -2,39 +2,39 @@
   "placeholderImages": [
     {
       "id": "hero-main",
-      "description": "Artisan jewelry maker's hands carefully crafting a piece.",
-      "imageUrl": "https://images.unsplash.com/photo-1764760214881-69e2a3198c11?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxqZXdlbHJ5JTIwd29ya3Nob3B8ZW58MHx8fHwxNzcwNjU0ODY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "jewelry workshop"
+      "description": "Manos de una artesana bordando flores en una tela con una aguja.",
+      "imageUrl": "https://images.unsplash.com/photo-1594943343369-15d5f29f109a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoYW5kcyUyMGVtYnJvaWRlcnl8ZW58MHx8fHwxNzEwOTU4NTMwfDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "hands embroidery"
     },
     {
-      "id": "product-bracelet",
-      "description": "A handcrafted leather bracelet with a metal clasp on a stone background.",
-      "imageUrl": "https://images.unsplash.com/photo-1676481974486-d8ed776dd8cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxsZWF0aGVyJTIwYnJhY2VsZXR8ZW58MHx8fHwxNzcwNjU0ODY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "leather bracelet"
+      "id": "product-notebook-leather",
+      "description": "Un cuaderno artesanal con cubierta de cuero marrón sobre una superficie de madera.",
+      "imageUrl": "https://images.unsplash.com/photo-1516943444951-6a689e4c5e39?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxsZWF0aGVyJTIwam91cm5hbHxlbnwwfHx8fDE3MTA5NTg1ODR8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "leather journal"
     },
     {
-      "id": "product-earrings",
-      "description": "A pair of hand-hammered silver earrings.",
-      "imageUrl": "https://images.unsplash.com/photo-1758974504431-85dc632f8fc0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzaWx2ZXIlMjBlYXJyaW5nc3xlbnwwfHx8fDE3NzA2NTQ4Njh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "silver earrings"
+      "id": "product-embroidery-hoop",
+      "description": "Un bordado de flores de colores en un bastidor de madera, sobre un fondo neutro.",
+      "imageUrl": "https://images.unsplash.com/photo-1619864384919-d1b11a43a2b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmbG9yYWwlMjBlbWJyb2lkZXJ5JTIwaG9vcHxlbnwwfHx8fDE3MTA5NTg2MzZ8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "floral embroidery"
     },
     {
-      "id": "product-necklace",
-      "description": "A necklace with turquoise stones.",
-      "imageUrl": "https://images.unsplash.com/photo-1666723278261-d509497c12d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0dXJxdW9pc2UlMjBuZWNrbGFjZXxlbnwwfHx8fDE3NzA2NTQ4Njh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "turquoise necklace"
+      "id": "product-notebook-fabric",
+      "description": "Un cuaderno forrado en tela con un patrón floral.",
+      "imageUrl": "https://images.unsplash.com/photo-1619362339460-f421f24d352c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmYWJyaWMlMjBub3RlYm9va3xlbnwwfHx8fDE3MTA5NTg2OTJ8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "fabric notebook"
     },
     {
-      "id": "product-ring",
-      "description": "An elegant ring with an opal stone.",
-      "imageUrl": "https://images.unsplash.com/photo-1649921621382-0a9544e5022b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxvcGFsJTIwcmluZ3xlbnwwfHx8fDE3NzA2NTQ4Njh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "opal ring"
+      "id": "product-embroidery-kit",
+      "description": "Un kit de bordado con hilos de colores, agujas, tijeras y un bastidor.",
+      "imageUrl": "https://images.unsplash.com/photo-1601618218828-9c60914c11ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlbWJyb2lkZXJ5JTIwa2l0fGVufDB8fHx8MTcxMDk1ODc0NHww&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "embroidery kit"
     },
     {
       "id": "about-artisan",
-      "description": "Portrait of the artisan jeweler in her workshop.",
-      "imageUrl": "https://images.unsplash.com/photo-1574632866565-34c4132a74c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhcnRpc2FuJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzcwNjU1MDIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "artisan portrait"
+      "description": "Retrato de una artesana en su taller, rodeada de telas y herramientas de costura.",
+      "imageUrl": "https://images.unsplash.com/photo-1557087383-085777353664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3b21hbiUyMGNyYWZ0ZXJ8ZW58MHx8fHwxNzEwOTU4Nzk2fDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "woman crafter"
     }
   ]
 }

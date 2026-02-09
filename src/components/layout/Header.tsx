@@ -5,7 +5,7 @@ import { Menu, ShoppingCart } from "lucide-react";
 
 const navLinks = [
   { href: "/", label: "Inicio" },
-  { href: "/products", label: "Productos" },
+  { href: "/products", label: "Creaciones" },
   { href: "/about", label: "Sobre Mí" },
   { href: "/#contact", label: "Contacto" },
 ];

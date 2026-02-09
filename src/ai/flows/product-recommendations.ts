@@ -1,7 +1,7 @@
 'use server';
 
 /**
- * @fileOverview This file defines a Genkit flow for providing personalized jewelry recommendations based on a customer's purchase history.
+ * @fileOverview This file defines a Genkit flow for providing personalized product recommendations based on a customer's purchase history.
  *
  * - `getProductRecommendations`: A function that takes a customer's purchase history and returns a list of recommended product names.
  * - `ProductRecommendationsInput`: The input type for the `getProductRecommendations` function, which includes the customer's purchase history.
@@ -35,10 +35,19 @@ const productRecommendationsPrompt = ai.definePrompt({
   name: 'productRecommendationsPrompt',
   input: {schema: ProductRecommendationsInputSchema},
   output: {schema: ProductRecommendationsOutputSchema},
-  prompt: `You are an expert jewelry recommendation system. Given a customer's purchase history, you will recommend other products that they might be interested in.
+  prompt: `You are an expert recommendation system for artisanal goods, specializing in handcrafted notebooks and embroidery. Given a customer's purchase history, you will recommend other products that they might be interested in.
+
+  Available Product Categories:
+  - Hand-stitched leather notebooks
+  - Fabric-covered journals
+  - Floral embroidery kits
+  - Finished embroidery hoops for decoration
+  - Custom-designed notebooks
 
   Purchase History:
   {{#each purchaseHistory}}- {{this}}\n{{/each}}
+
+  Based on this history, suggest 3 other specific products they might like. Be creative with the product names.
 
   Recommendations:`,
 });

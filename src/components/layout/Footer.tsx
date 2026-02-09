@@ -9,14 +9,14 @@ export default function Footer() {
         <div>
           <h3 className="text-xl font-headline text-white mb-4">Artesana</h3>
           <p className="text-sm text-stone-400">
-            El Alma en Cada Detalle. Creando piezas únicas que cuentan historias.
+            El Alma en Cada Detalle. Cuadernos y bordados únicos que cuentan historias.
           </p>
         </div>
         <div>
           <h3 className="text-lg font-bold text-white mb-4">Navegación</h3>
           <ul className="space-y-2 text-sm">
             <li><Link href="/" className="hover:text-primary transition-colors">Inicio</Link></li>
-            <li><Link href="/products" className="hover:text-primary transition-colors">Productos</Link></li>
+            <li><Link href="/products" className="hover:text-primary transition-colors">Creaciones</Link></li>
             <li><Link href="/about" className="hover:text-primary transition-colors">Sobre Mí</Link></li>
             <li><Link href="/#contact" className="hover:text-primary transition-colors">Contacto</Link></li>
           </ul>

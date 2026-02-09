@@ -27,24 +27,24 @@ export default function Home() {
             El Alma en Cada Detalle
           </h1>
           <p className="text-lg md:text-xl text-stone-200 max-w-2xl mx-auto drop-shadow-sm">
-            Descubre piezas únicas de joyería, hechas a mano con amor y dedicación.
+            Cuadernos y bordados artesanales, creados para contar tu propia historia.
           </p>
           <Button asChild size="lg" className="bg-primary/80 hover:bg-primary border-primary-foreground/20 border backdrop-blur-sm text-primary-foreground mt-4">
-            <Link href="/products">Explorar Colección</Link>
+            <Link href="/products">Explorar Creaciones</Link>
           </Button>
         </div>
       </section>
 
       <section>
-        <h2 className="font-headline text-3xl md:text-4xl text-center mb-10 text-foreground/90">Productos Destacados</h2>
+        <h2 className="font-headline text-3xl md:text-4xl text-center mb-10 text-foreground/90">Creaciones Destacadas</h2>
         <ProductShowcase />
       </section>
 
       <div className="text-center pb-8 bg-card p-8 rounded-lg shadow-sm">
-        <h3 className="font-headline text-2xl md:text-3xl mb-4">¿Lista para encontrar tu próxima joya?</h3>
-        <p className="text-muted-foreground mb-6 max-w-xl mx-auto">Nuestra colección completa está esperando a ser descubierta. Cada pieza tiene una historia que contar.</p>
+        <h3 className="font-headline text-2xl md:text-3xl mb-4">¿Lista para encontrar tu próxima inspiración?</h3>
+        <p className="text-muted-foreground mb-6 max-w-xl mx-auto">Nuestra colección completa está esperando a ser descubierta. Cada pieza tiene una historia.</p>
         <Button asChild size="lg">
-          <Link href="/products">Ver Todos los Productos</Link>
+          <Link href="/products">Ver Todas las Creaciones</Link>
         </Button>
       </div>
 

@@ -10,44 +10,44 @@ export type Product = {
 };
 
 const productImages = {
-  bracelet: PlaceHolderImages.find(p => p.id === 'product-bracelet')!,
-  earrings: PlaceHolderImages.find(p => p.id === 'product-earrings')!,
-  necklace: PlaceHolderImages.find(p => p.id === 'product-necklace')!,
-  ring: PlaceHolderImages.find(p => p.id === 'product-ring')!,
+  notebookLeather: PlaceHolderImages.find(p => p.id === 'product-notebook-leather')!,
+  embroideryHoop: PlaceHolderImages.find(p => p.id === 'product-embroidery-hoop')!,
+  notebookFabric: PlaceHolderImages.find(p => p.id === 'product-notebook-fabric')!,
+  embroideryKit: PlaceHolderImages.find(p => p.id === 'product-embroidery-kit')!,
 };
 
 
 export const products: Product[] = [
   {
     id: 1,
-    name: "Brazalete de Cuero",
-    description: "Cuero genuino con broche de metal tallado a mano.",
-    price: 45,
-    image: productImages.bracelet.imageUrl,
-    imageHint: productImages.bracelet.imageHint,
+    name: "Cuaderno de Cuero 'Aventura'",
+    description: "Cuaderno de viaje con cubierta de cuero genuino, cosido a mano.",
+    price: 35,
+    image: productImages.notebookLeather.imageUrl,
+    imageHint: productImages.notebookLeather.imageHint,
   },
   {
     id: 2,
-    name: "Aros de Plata Martillada",
-    description: "Plata de ley 925 con un diseño único martillado a mano.",
-    price: 60,
-    image: productImages.earrings.imageUrl,
-    imageHint: productImages.earrings.imageHint,
+    name: "Bordado Floral 'Primavera'",
+    description: "Delicado bordado de flores silvestres en un bastidor de bambú.",
+    price: 50,
+    image: productImages.embroideryHoop.imageUrl,
+    imageHint: productImages.embroideryHoop.imageHint,
   },
   {
     id: 3,
-    name: "Collar de Turquesa",
-    description: "Elegante collar con piedras de turquesa natural y cadena de plata.",
-    price: 85,
-    image: productImages.necklace.imageUrl,
-    imageHint: productImages.necklace.imageHint,
+    name: "Diario con Tela 'Jardín Secreto'",
+    description: "Elegante diario forrado en tela con motivos botánicos.",
+    price: 28,
+    image: productImages.notebookFabric.imageUrl,
+    imageHint: productImages.notebookFabric.imageHint,
   },
   {
     id: 4,
-    name: "Anillo de Ópalo",
-    description: "Anillo de plata con una brillante piedra de ópalo en el centro.",
-    price: 75,
-    image: productImages.ring.imageUrl,
-    imageHint: productImages.ring.imageHint,
+    name: "Kit de Bordado 'Mi Primer Ramo'",
+    description: "Todo lo que necesitas para empezar a bordar: hilos, tela, aguja y bastidor.",
+    price: 42,
+    image: productImages.embroideryKit.imageUrl,
+    imageHint: productImages.embroideryKit.imageHint,
   },
 ];
