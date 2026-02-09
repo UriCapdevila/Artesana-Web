@@ -15,7 +15,7 @@ export default function ProductCard({ product, sizes }: { product: Product, size
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
-      <Card className="group overflow-hidden relative flex flex-col border-none shadow-none rounded-lg bg-transparent transition-shadow duration-300 hover:shadow-2xl">
+      <Card className="group overflow-hidden relative flex flex-col rounded-lg bg-card transition-shadow duration-300 hover:shadow-xl">
         <Link href={`/products/${product.id}`} className="absolute inset-0 z-10" aria-label={`Ver ${product.name}`}>
           <span className="sr-only">Ver Detalles</span>
         </Link>
@@ -30,7 +30,7 @@ export default function ProductCard({ product, sizes }: { product: Product, size
             sizes={sizes}
           />
         </div>
-        <div className="pt-4 flex-grow flex flex-col">
+        <div className="p-4 flex-grow flex flex-col">
           <h3 className="font-headline text-xl text-foreground/90 bg-left-bottom bg-gradient-to-r from-primary to-primary bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out w-fit">{product.name}</h3>
           <p className="text-muted-foreground text-sm mt-1 flex-grow">{product.description}</p>
           <div className="flex justify-between items-end mt-auto pt-2">
