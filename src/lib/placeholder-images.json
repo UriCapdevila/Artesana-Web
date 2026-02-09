@@ -29,6 +29,12 @@
       "description": "An elegant ring with an opal stone.",
       "imageUrl": "https://images.unsplash.com/photo-1649921621382-0a9544e5022b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxvcGFsJTIwcmluZ3xlbnwwfHx8fDE3NzA2NTQ4Njh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "opal ring"
+    },
+    {
+      "id": "about-artisan",
+      "description": "Portrait of the artisan jeweler in her workshop.",
+      "imageUrl": "https://images.unsplash.com/photo-1574632866565-34c4132a74c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhcnRpc2FuJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzcwNjU1MDIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "artisan portrait"
     }
   ]
 }
