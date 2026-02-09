@@ -1,13 +1,17 @@
 import Link from "next/link";
 import { Instagram } from "@/components/Instagram";
 import { WhatsApp } from "@/components/WhatsApp";
+import Image from "next/image";
 
 export default function Footer() {
   return (
     <footer className="bg-stone-800 text-stone-300 p-8">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
-          <h3 className="text-xl font-headline text-white mb-4">Artesana</h3>
+          <div className="flex items-center gap-3 mb-4">
+            <Image src="/logo.png" alt="Logo de Artesana" width={28} height={28} />
+            <h3 className="text-xl font-headline text-white">Artesana</h3>
+          </div>
           <p className="text-sm text-stone-400">
             El Alma en Cada Detalle. Cuadernos y bordados únicos que cuentan historias.
           </p>
