@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <div className="flex items-center gap-3 mb-4">
-            <Image src="/logo.png" alt="Logo de Artesana" width={28} height={28} />
+            <Image src="/Logo.png" alt="Logo de Artesana" width={28} height={28} />
             <h3 className="text-xl font-headline text-white">Artesana</h3>
           </div>
           <p className="text-sm text-stone-400">

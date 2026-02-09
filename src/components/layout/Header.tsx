@@ -16,7 +16,7 @@ export default function Header() {
     <header className="bg-background/80 backdrop-blur-sm sticky top-0 z-40 border-b">
       <div className="container mx-auto flex justify-between items-center p-4">
         <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-primary font-headline">
-          <Image src="/logo.png" alt="Logo de Artesana" width={32} height={32} />
+          <Image src="/Logo.png" alt="Logo de Artesana" width={32} height={32} />
           <span>Artesana</span>
         </Link>
 
