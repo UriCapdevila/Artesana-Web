@@ -2,10 +2,9 @@ import { products } from "@/lib/products";
 import { Button } from "@/components/ui/button";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import Link from "next/link";
-import ContactForm from "@/components/ContactForm";
 import { Instagram } from '@/components/Instagram';
 import { WhatsApp } from '@/components/WhatsApp';
-import { Mail, Phone } from 'lucide-react';
+import { Mail } from 'lucide-react';
 import ProductCard from "@/components/ProductCard";
 import HeroSection from "@/components/HeroSection";
 import AboutCallout from "@/components/AboutCallout";
@@ -56,37 +55,33 @@ export default function Home() {
           </p>
         </header>
 
-        <div className="grid md:grid-cols-5 gap-12 md:gap-16 items-start">
-          <div className="md:col-span-3">
-             <ContactForm />
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-card p-8 rounded-lg shadow-lg text-center flex flex-col items-center transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                <Mail className="w-12 h-12 text-primary mb-4" />
+                <h3 className="font-headline text-2xl text-foreground/90 mb-2">Email</h3>
+                <p className="text-muted-foreground mb-6 flex-grow">Para consultas, encargos o colaboraciones.</p>
+                <Button asChild variant="outline">
+                    <a href="mailto:hola@artesana.com">Enviar un Mensaje</a>
+                </Button>
+            </div>
 
-          <div className="md:col-span-2 space-y-10">
-              <div>
-                <h3 className="font-headline text-2xl text-foreground/90 mb-4">Otras Formas de Contacto</h3>
-                <div className="space-y-4">
-                    <div className="flex items-center gap-4">
-                        <Mail className="w-6 h-6 text-primary" />
-                        <a href="mailto:hola@artesana.com" className="text-lg hover:text-primary transition-colors">hola@artesana.com</a>
-                    </div>
-                   <div className="flex items-center gap-4">
-                      <Phone className="w-6 h-6 text-primary" />
-                      <a href="tel:+34600000000" className="text-lg hover:text-primary transition-colors">+34 600 000 000</a>
-                  </div>
-              </div>
-              </div>
-              <div>
-                <h3 className="font-headline text-2xl text-foreground/90 mb-4">Sígueme</h3>
-                 <div className="flex space-x-6">
-                    <Link href="#" target="_blank" aria-label="Instagram" className="text-muted-foreground hover:text-primary transition-colors">
-                        <Instagram className="w-10 h-10" />
-                    </Link>
-                    <Link href="#" target="_blank" aria-label="WhatsApp" className="text-muted-foreground hover:text-primary transition-colors">
-                        <WhatsApp className="w-10 h-10" />
-                    </Link>
-                </div>
-              </div>
-          </div>
+            <div className="bg-card p-8 rounded-lg shadow-lg text-center flex flex-col items-center transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                <Instagram className="w-12 h-12 text-primary mb-4" />
+                <h3 className="font-headline text-2xl text-foreground/90 mb-2">Instagram</h3>
+                <p className="text-muted-foreground mb-6 flex-grow">Sigue mi proceso creativo y las últimas novedades.</p>
+                <Button asChild variant="outline">
+                    <a href="#" target="_blank" rel="noopener noreferrer">@artesana_handmade</a>
+                </Button>
+            </div>
+
+            <div className="bg-card p-8 rounded-lg shadow-lg text-center flex flex-col items-center transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                <WhatsApp className="w-12 h-12 text-primary mb-4" />
+                <h3 className="font-headline text-2xl text-foreground/90 mb-2">WhatsApp</h3>
+                <p className="text-muted-foreground mb-6 flex-grow">Para una comunicación más directa y rápida.</p>
+                <Button asChild variant="outline">
+                    <a href="https://wa.me/34600000000" target="_blank" rel="noopener noreferrer">Chatear Ahora</a>
+                </Button>
+            </div>
         </div>
       </section>
     </div>
