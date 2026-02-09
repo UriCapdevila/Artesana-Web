@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero-main",
-      "description": "Manos de una artesana bordando flores en una tela con una aguja.",
-      "imageUrl": "/images/hero-main.jpg",
-      "imageHint": "hands embroidery"
+      "description": "Fondo de la sección principal de Artesana.",
+      "imageUrl": "/Artesana.jpeg",
+      "imageHint": "craft background"
     },
     {
       "id": "product-notebook-leather",
