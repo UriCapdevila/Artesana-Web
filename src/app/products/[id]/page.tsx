@@ -1,3 +1,6 @@
+'use client';
+
+import { useState } from 'react';
 import { products } from '@/lib/products';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
@@ -13,11 +16,16 @@ export function generateStaticParams() {
 }
 
 export default function ProductDetailPage({ params }: { params: { id: string } }) {
+  const [quantity, setQuantity] = useState(1);
   const product = products.find(p => p.id === parseInt(params.id));
 
   if (!product) {
     notFound();
   }
+
+  const handleQuantityChange = (amount: number) => {
+    setQuantity(prevQuantity => Math.max(1, prevQuantity + amount));
+  };
 
   return (
     <div className="space-y-16 md:space-y-24">
@@ -53,7 +61,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
           <h1 className="font-headline text-4xl font-bold text-primary">{product.name}</h1>
           <div className="flex items-center gap-4">
             <p className="text-3xl font-bold text-foreground">€{product.price}</p>
-            <div className="flex items-center gap-1 text-yellow-500">
+            <div className="flex items-center gap-1 text-accent">
                 <Star className="w-5 h-5 fill-current" />
                 <Star className="w-5 h-5 fill-current" />
                 <Star className="w-5 h-5 fill-current" />
@@ -67,11 +75,24 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
           <div className="flex items-center gap-4">
             <p className="font-semibold">Cantidad:</p>
             <div className="flex items-center border rounded-md">
-              <Button variant="ghost" size="icon" className="h-10 w-10">
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                className="h-10 w-10"
+                onClick={() => handleQuantityChange(-1)}
+                disabled={quantity <= 1}
+                aria-label="Disminuir cantidad"
+              >
                 <Minus className="w-4 h-4" />
               </Button>
-              <span className="w-10 text-center font-bold">1</span>
-              <Button variant="ghost" size="icon" className="h-10 w-10">
+              <span className="w-10 text-center font-bold" aria-live="polite">{quantity}</span>
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                className="h-10 w-10"
+                onClick={() => handleQuantityChange(1)}
+                aria-label="Aumentar cantidad"
+              >
                 <Plus className="w-4 h-4" />
               </Button>
             </div>
