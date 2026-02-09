@@ -19,7 +19,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
   }
 
   return (
-    <div className="space-y-16 md:space-y-24">
+    <div className="space-y-20 md:space-y-28">
       <Breadcrumb>
         <BreadcrumbList>
           <BreadcrumbItem>
@@ -36,8 +36,8 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
         </BreadcrumbList>
       </Breadcrumb>
       
-      <div className="grid md:grid-cols-2 gap-12 items-start">
-        <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
+      <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-start">
+        <div className="relative aspect-square rounded-lg overflow-hidden shadow-xl bg-card">
           <Image
             src={product.image}
             alt={product.name}
@@ -52,8 +52,10 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
         
       </div>
 
-      <section>
-        <h2 className="font-headline text-3xl md:text-4xl text-center mb-10 text-foreground/90">También te podría gustar</h2>
+      <section className="space-y-12">
+        <header className="text-center">
+          <h2 className="font-headline text-4xl md:text-5xl font-bold text-primary">También te podría gustar</h2>
+        </header>
         <ProductShowcase excludeId={product.id} />
       </section>
     </div>

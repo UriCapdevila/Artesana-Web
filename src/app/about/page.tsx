@@ -7,9 +7,9 @@ export default function AboutPage() {
   const artisanImage = PlaceHolderImages.find(p => p.id === 'about-artisan')!;
 
   return (
-    <div className="space-y-16 md:space-y-24">
+    <div className="space-y-24 md:space-y-32">
       <header className="text-center space-y-4">
-        <h1 className="font-headline text-4xl md:text-5xl font-bold text-primary">
+        <h1 className="font-headline text-5xl md:text-6xl font-bold text-primary">
           Sobre la Artesana
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -17,9 +17,9 @@ export default function AboutPage() {
         </p>
       </header>
 
-      <div className="grid md:grid-cols-5 gap-8 md:gap-12 items-start">
+      <div className="grid md:grid-cols-5 gap-12 md:gap-16 items-start">
         <div className="md:col-span-2">
-          <Card className="overflow-hidden shadow-lg">
+          <Card className="overflow-hidden shadow-xl rounded-lg bg-card">
             <div className="relative aspect-[3/4]">
               <Image
                 src={artisanImage.imageUrl}
@@ -32,7 +32,7 @@ export default function AboutPage() {
             </div>
           </Card>
         </div>
-        <div className="md:col-span-3 space-y-6 text-foreground/90 text-lg">
+        <div className="md:col-span-3 space-y-6 text-foreground/90 text-lg leading-relaxed">
           <p>
             ¡Hola! Soy Ana, la mente, el corazón y las manos detrás de Artesana. Desde que tengo memoria, me ha fascinado la textura del papel y el color de los hilos. Transformar estos materiales en cuadernos que guardan secretos y bordados que cuentan historias no es solo mi trabajo; es mi pasión y mi forma de conectar con el mundo.
           </p>
@@ -45,33 +45,33 @@ export default function AboutPage() {
         </div>
       </div>
 
-      <section className="bg-card p-8 md:p-12 rounded-lg shadow-sm">
-        <h2 className="font-headline text-3xl md:text-4xl text-center mb-10 text-foreground/90">Mi Filosofía</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-          <div className="flex flex-col items-center space-y-3">
-            <div className="bg-primary/10 p-4 rounded-full">
-              <PenTool className="w-8 h-8 text-primary" />
+      <section className="bg-card p-10 md:p-16 rounded-lg shadow-lg">
+        <h2 className="font-headline text-4xl md:text-5xl text-center mb-12 text-primary">Mi Filosofía</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+          <div className="flex flex-col items-center space-y-4">
+            <div className="bg-primary/10 p-5 rounded-full">
+              <PenTool className="w-10 h-10 text-primary" />
             </div>
-            <h3 className="font-headline text-xl font-semibold">Artesanía Pura</h3>
-            <p className="text-muted-foreground">
+            <h3 className="font-headline text-2xl font-semibold">Artesanía Pura</h3>
+            <p className="text-muted-foreground text-base">
               Cada creación es 100% hecha a mano, garantizando un carácter y una calidad inigualables.
             </p>
           </div>
-          <div className="flex flex-col items-center space-y-3">
-            <div className="bg-primary/10 p-4 rounded-full">
-              <Scissors className="w-8 h-8 text-primary" />
+          <div className="flex flex-col items-center space-y-4">
+            <div className="bg-primary/10 p-5 rounded-full">
+              <Scissors className="w-10 h-10 text-primary" />
             </div>
-            <h3 className="font-headline text-xl font-semibold">Materiales con Alma</h3>
-            <p className="text-muted-foreground">
+            <h3 className="font-headline text-2xl font-semibold">Materiales con Alma</h3>
+            <p className="text-muted-foreground text-base">
               Selecciono cuidadosamente papeles, telas, hilos y cueros que inspiran al tacto y a la vista.
             </p>
           </div>
-          <div className="flex flex-col items-center space-y-3">
-            <div className="bg-primary/10 p-4 rounded-full">
-              <Heart className="w-8 h-8 text-primary" />
+          <div className="flex flex-col items-center space-y-4">
+            <div className="bg-primary/10 p-5 rounded-full">
+              <Heart className="w-10 h-10 text-primary" />
             </div>
-            <h3 className="font-headline text-xl font-semibold">Hecho con Amor</h3>
-            <p className="text-muted-foreground">
+            <h3 className="font-headline text-2xl font-semibold">Hecho con Amor</h3>
+            <p className="text-muted-foreground text-base">
               Mi pasión se refleja en cada detalle, creando piezas que conectan emocionalmente.
             </p>
           </div>
