@@ -35,6 +35,36 @@
       "description": "Retrato de una artesana en su taller, rodeada de telas y herramientas de costura.",
       "imageUrl": "https://picsum.photos/seed/aa/600/800",
       "imageHint": "woman crafter"
+    },
+    {
+      "id": "instagram-1",
+      "description": "Post de Instagram 1",
+      "imageUrl": "https://images.unsplash.com/photo-1494430539277-0c8da386e1ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjcmFmdCUyMGZsYXRsYXl8ZW58MHx8fHwxNzcwNjc0Mzc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "craft flatlay"
+    },
+    {
+      "id": "instagram-2",
+      "description": "Post de Instagram 2",
+      "imageUrl": "https://images.unsplash.com/photo-1766233420474-6ea235d3eac5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxub3RlYm9vayUyMGRldGFpbHxlbnwwfHx8fDE3NzA2NzQzNzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "notebook detail"
+    },
+    {
+      "id": "instagram-3",
+      "description": "Post de Instagram 3",
+      "imageUrl": "https://images.unsplash.com/photo-1768943366929-bf4f3d2840a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlbWJyb2lkZXJ5JTIwcHJvY2Vzc3xlbnwwfHx8fDE3NzA2NzQzNzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "embroidery process"
+    },
+    {
+      "id": "instagram-4",
+      "description": "Post de Instagram 4",
+      "imageUrl": "https://images.unsplash.com/photo-1711006777187-2c991e1b90b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhcnRpc2FuJTIwaGFuZHN8ZW58MHx8fHwxNzcwNjMyNzc2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "artisan hands"
+    },
+    {
+      "id": "instagram-5",
+      "description": "Post de Instagram 5",
+      "imageUrl": "https://images.unsplash.com/photo-1728724569841-05305ee197df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmaW5pc2hlZCUyMHByb2R1Y3R8ZW58MHx8fHwxNzcwNjc0Mzc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "finished product"
     }
   ]
 }

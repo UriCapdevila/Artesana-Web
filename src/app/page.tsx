@@ -1,14 +1,15 @@
 import { products } from "@/lib/products";
 import { Button } from "@/components/ui/button";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import Image from "next/image";
 import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
 import { Instagram } from '@/components/Instagram';
 import { WhatsApp } from '@/components/WhatsApp';
-import { Mail, Phone, ArrowRight } from 'lucide-react';
+import { Mail, Phone } from 'lucide-react';
 import ProductCard from "@/components/ProductCard";
-import { Card } from "@/components/ui/card";
+import HeroSection from "@/components/HeroSection";
+import AboutCallout from "@/components/AboutCallout";
+import InstagramFeed from "@/components/InstagramFeed";
 
 export default function Home() {
   const heroImage = PlaceHolderImages.find(p => p.id === 'hero-main')!;
@@ -17,27 +18,7 @@ export default function Home() {
 
   return (
     <div className="space-y-24 md:space-y-32">
-      <section className="relative h-[75vh] min-h-[500px] max-h-[700px] w-full flex items-center justify-center text-center text-white rounded-lg overflow-hidden shadow-2xl">
-        <Image
-          src={heroImage.imageUrl}
-          alt={heroImage.description}
-          data-ai-hint={heroImage.imageHint}
-          fill
-          className="object-cover brightness-[.65]"
-          priority
-        />
-        <div className="relative z-10 p-4 space-y-6 animate-fade-in-up">
-          <h1 className="font-headline text-5xl md:text-7xl font-bold text-white drop-shadow-lg">
-            El Alma en Cada Detalle
-          </h1>
-          <p className="text-xl md:text-2xl text-stone-100 max-w-3xl mx-auto drop-shadow-md">
-            Cuadernos y bordados artesanales, creados para contar tu propia historia.
-          </p>
-          <Button asChild size="lg" className="mt-6 text-lg group transition-transform duration-300 hover:scale-105">
-            <Link href="/products">Explorar Creaciones <ArrowRight className="ml-2 transition-transform duration-300 group-hover:translate-x-1" /></Link>
-          </Button>
-        </div>
-      </section>
+      <HeroSection heroImage={heroImage} />
 
       <section className="space-y-12">
         <header className="text-center">
@@ -48,30 +29,7 @@ export default function Home() {
           <ProductCard product={featuredProducts[0]} sizes="(max-width: 768px) 100vw, 50vw" />
           <ProductCard product={featuredProducts[1]} sizes="(max-width: 768px) 100vw, 50vw" />
 
-          <div className="md:col-span-2 group relative">
-              <Link href="/about" className="absolute inset-0 z-10" aria-label="Sobre la artesana">
-                <span className="sr-only">Sobre la artesana</span>
-              </Link>
-              <Card className="h-full flex flex-col md:flex-row items-center overflow-hidden bg-card transition-all duration-300 group-hover:shadow-2xl group-hover:-translate-y-1">
-                  <div className="relative w-full md:w-1/3 aspect-[4/3] md:aspect-auto md:h-full">
-                        <Image
-                          src={artisanImage.imageUrl}
-                          alt={artisanImage.description}
-                          data-ai-hint={artisanImage.imageHint}
-                          fill
-                          className="object-cover group-hover:scale-105 transition-transform duration-300"
-                      />
-                  </div>
-                  <div className="flex-1 p-8 md:p-12 text-center md:text-left">
-                      <h3 className="font-headline text-3xl font-bold text-primary mb-4">La Artesana Detrás de la Magia</h3>
-                      <p className="text-muted-foreground mb-6">"Cada puntada y cada página en blanco son una promesa de una nueva historia."</p>
-                      <div className="inline-flex items-center justify-center md:justify-start gap-2 text-primary font-bold">
-                          <span>Conoce mi historia</span>
-                          <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
-                      </div>
-                  </div>
-              </Card>
-          </div>
+          <AboutCallout artisanImage={artisanImage} />
 
           <ProductCard product={featuredProducts[2]} sizes="(max-width: 768px) 100vw, 50vw" />
           <ProductCard product={featuredProducts[3]} sizes="(max-width: 768px) 100vw, 50vw" />
@@ -85,6 +43,8 @@ export default function Home() {
           <Link href="/products">Ver Todas las Creaciones</Link>
         </Button>
       </div>
+
+      <InstagramFeed />
 
       <section id="contact" className="space-y-16 scroll-mt-20">
         <header className="text-center space-y-4">
