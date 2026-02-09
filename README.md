@@ -62,6 +62,3 @@ El proyecto está organizado siguiendo las convenciones del App Router de Next.j
 - `public/`: Activos estáticos como imágenes y logotipos.
 - `tailwind.config.ts`: Archivo de configuración para Tailwind CSS.
 
----
-
-Hecho con ❤️ en Firebase Studio.
