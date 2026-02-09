@@ -22,15 +22,15 @@ export default function Home() {
           className="object-cover brightness-[.65]"
           priority
         />
-        <div className="relative z-10 p-4 space-y-6">
+        <div className="relative z-10 p-4 space-y-6 animate-fade-in-up">
           <h1 className="font-headline text-5xl md:text-7xl font-bold text-white drop-shadow-lg">
             El Alma en Cada Detalle
           </h1>
           <p className="text-xl md:text-2xl text-stone-100 max-w-3xl mx-auto drop-shadow-md">
             Cuadernos y bordados artesanales, creados para contar tu propia historia.
           </p>
-          <Button asChild size="lg" className="mt-6 text-lg">
-            <Link href="/products">Explorar Creaciones <ArrowRight className="ml-2" /></Link>
+          <Button asChild size="lg" className="mt-6 text-lg group transition-transform duration-300 hover:scale-105">
+            <Link href="/products">Explorar Creaciones <ArrowRight className="ml-2 transition-transform duration-300 group-hover:translate-x-1" /></Link>
           </Button>
         </div>
       </section>
@@ -43,7 +43,7 @@ export default function Home() {
         <ProductShowcase />
       </section>
 
-      <div className="text-center bg-card p-12 md:p-16 rounded-lg shadow-lg">
+      <div className="text-center bg-card p-12 md:p-16 rounded-lg shadow-lg transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl">
         <h3 className="font-headline text-3xl md:text-4xl mb-4 text-foreground/90">¿Lista para encontrar tu próxima inspiración?</h3>
         <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">Nuestra colección completa está esperando a ser descubierta. Cada pieza tiene una historia.</p>
         <Button asChild size="lg" variant="outline" className="text-lg">

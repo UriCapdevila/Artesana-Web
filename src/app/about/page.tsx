@@ -48,7 +48,7 @@ export default function AboutPage() {
       <section className="bg-card p-10 md:p-16 rounded-lg shadow-lg">
         <h2 className="font-headline text-4xl md:text-5xl text-center mb-12 text-primary">Mi Filosofía</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
-          <div className="flex flex-col items-center space-y-4">
+          <div className="flex flex-col items-center space-y-4 p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl rounded-lg">
             <div className="bg-primary/10 p-5 rounded-full">
               <PenTool className="w-10 h-10 text-primary" />
             </div>
@@ -57,7 +57,7 @@ export default function AboutPage() {
               Cada creación es 100% hecha a mano, garantizando un carácter y una calidad inigualables.
             </p>
           </div>
-          <div className="flex flex-col items-center space-y-4">
+          <div className="flex flex-col items-center space-y-4 p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl rounded-lg">
             <div className="bg-primary/10 p-5 rounded-full">
               <Scissors className="w-10 h-10 text-primary" />
             </div>
@@ -66,7 +66,7 @@ export default function AboutPage() {
               Selecciono cuidadosamente papeles, telas, hilos y cueros que inspiran al tacto y a la vista.
             </p>
           </div>
-          <div className="flex flex-col items-center space-y-4">
+          <div className="flex flex-col items-center space-y-4 p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl rounded-lg">
             <div className="bg-primary/10 p-5 rounded-full">
               <Heart className="w-10 h-10 text-primary" />
             </div>
