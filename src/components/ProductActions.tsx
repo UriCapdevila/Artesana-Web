@@ -3,7 +3,8 @@
 import { useState } from 'react';
 import type { Product } from '@/lib/products';
 import { Button } from '@/components/ui/button';
-import { Heart, Minus, Plus, ShoppingCart, Star } from 'lucide-react';
+import { Heart, Minus, Plus, Star } from 'lucide-react';
+import { WhatsApp } from './WhatsApp';
 
 export default function ProductActions({ product }: { product: Product }) {
   const [quantity, setQuantity] = useState(1);
@@ -12,8 +13,11 @@ export default function ProductActions({ product }: { product: Product }) {
     setQuantity(prevQuantity => Math.max(1, prevQuantity + amount));
   };
 
+  const whatsappMessage = `¡Hola! Estoy interesado/a en ${quantity} unidad(es) del producto "${product.name}".`;
+  const whatsappLink = `https://wa.me/34600000000?text=${encodeURIComponent(whatsappMessage)}`;
+
   return (
-    <div className="space-y-8">
+    <div className="flex flex-col space-y-8 p-4 sm:p-6 md:p-8">
       <div>
         <h1 className="font-headline text-4xl md:text-5xl font-bold text-primary">{product.name}</h1>
         <div className="flex items-center gap-4 mt-4">
@@ -28,7 +32,7 @@ export default function ProductActions({ product }: { product: Product }) {
         </div>
       </div>
       
-      <p className="text-2xl font-semibold text-foreground">€{product.price}</p>
+      <p className="text-3xl font-semibold text-foreground">€{product.price}</p>
       
       <p className="text-lg text-muted-foreground leading-relaxed">{product.description}</p>
       
@@ -58,10 +62,12 @@ export default function ProductActions({ product }: { product: Product }) {
         </div>
       </div>
 
-      <div className="flex gap-4">
-        <Button size="lg" className="flex-1 text-lg">
-          <ShoppingCart className="mr-2" />
-          Añadir al Carrito
+      <div className="flex flex-col sm:flex-row gap-4">
+        <Button asChild size="lg" className="flex-1 text-lg">
+          <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+            <WhatsApp className="mr-2" />
+            Consultar por WhatsApp
+          </a>
         </Button>
         <Button variant="outline" size="lg" className="px-4">
           <Heart />

@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, ShoppingCart } from "lucide-react";
+import { Menu } from "lucide-react";
 import Image from "next/image";
+import { WhatsApp } from "@/components/WhatsApp";
 
 const navLinks = [
   { href: "/", label: "Inicio" },
@@ -29,11 +30,13 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* Desktop Cart */}
+        {/* Desktop Cart -> WhatsApp */}
         <div className="hidden md:block">
-          <Button variant="outline">
-            <ShoppingCart className="mr-2 h-4 w-4" />
-            Carrito (0)
+          <Button asChild variant="outline">
+            <a href="https://wa.me/34600000000" target="_blank" rel="noopener noreferrer">
+              <WhatsApp className="mr-2 h-4 w-4" />
+              Chatear
+            </a>
           </Button>
         </div>
 
@@ -53,9 +56,11 @@ export default function Header() {
                     {link.label}
                   </Link>
                 ))}
-                <Button variant="default" className="mt-4">
-                   <ShoppingCart className="mr-2 h-4 w-4" />
-                   Carrito (0)
+                <Button asChild variant="default" className="mt-4">
+                   <a href="https://wa.me/34600000000" target="_blank" rel="noopener noreferrer">
+                     <WhatsApp className="mr-2 h-4 w-4" />
+                     Chatear por WhatsApp
+                   </a>
                 </Button>
               </nav>
             </SheetContent>
