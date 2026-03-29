@@ -11,14 +11,15 @@ export default async function ProductShowcase({ excludeId }: ProductShowcaseProp
     : (await productService.getAll()).slice(0, 4);
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div className="flex flex-wrap justify-center items-stretch gap-8 mx-auto">
       {products.map((product, index) => (
-        <ProductCard
-          key={product.id}
-          product={product}
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-          listPosition={index}
-        />
+        <div key={product.id} className="flex w-full sm:w-[calc(50%-1rem)] lg:w-[300px]">
+          <ProductCard
+            product={product}
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 300px"
+            listPosition={index}
+          />
+        </div>
       ))}
     </div>
   );

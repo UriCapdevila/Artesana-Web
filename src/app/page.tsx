@@ -36,6 +36,7 @@ export default async function Home() {
             productPrice={featuredProducts[0].price}
             source="grid"
             listPosition={0}
+            className="flex h-full w-full"
           >
             <ProductCard
               product={featuredProducts[0]}
@@ -48,6 +49,7 @@ export default async function Home() {
             productPrice={featuredProducts[1].price}
             source="grid"
             listPosition={1}
+            className="flex h-full w-full"
           >
             <ProductCard
               product={featuredProducts[1]}
@@ -63,6 +65,7 @@ export default async function Home() {
             productPrice={featuredProducts[2].price}
             source="grid"
             listPosition={2}
+            className="flex h-full w-full"
           >
             <ProductCard
               product={featuredProducts[2]}
@@ -75,6 +78,7 @@ export default async function Home() {
             productPrice={featuredProducts[3].price}
             source="grid"
             listPosition={3}
+            className="flex h-full w-full"
           >
             <ProductCard
               product={featuredProducts[3]}

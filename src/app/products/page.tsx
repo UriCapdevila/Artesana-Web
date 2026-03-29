@@ -44,6 +44,7 @@ export default async function ProductsPage() {
               productPrice={product.price}
               source="grid"
               listPosition={index}
+              className="flex h-full w-full"
             >
               <ProductCard
                 product={product}

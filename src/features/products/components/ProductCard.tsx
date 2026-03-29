@@ -23,8 +23,9 @@ export default function ProductCard({ product, sizes, listPosition }: ProductCar
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
+      className="h-full w-full"
     >
-      <Card className="group overflow-hidden relative flex flex-col rounded-lg bg-card transition-shadow duration-300 hover:shadow-xl">
+      <Card className="h-full w-full group overflow-hidden relative flex flex-col rounded-lg bg-card transition-shadow duration-300 hover:shadow-xl">
         <Link href={`/products/${product.id}`} className="absolute inset-0 z-10" aria-label={`Ver ${product.name}`}>
           <span className="sr-only">Ver Detalles</span>
         </Link>
