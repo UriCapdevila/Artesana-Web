@@ -1,7 +1,8 @@
-import Link from "next/link";
-import { Instagram } from "@/components/Instagram";
-import { WhatsApp } from "@/components/WhatsApp";
-import Image from "next/image";
+import Link from 'next/link';
+import { Instagram } from '@/features/home/components/icons/Instagram';
+import { WhatsApp } from '@/shared/components/icons/WhatsApp';
+import Image from 'next/image';
+import { WHATSAPP_URL, INSTAGRAM_URL } from '@/shared/lib/constants';
 
 export default function Footer() {
   return (
@@ -19,22 +20,52 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-bold text-white mb-4">Navegación</h3>
           <ul className="space-y-2 text-sm">
-            <li><Link href="/" className="hover:text-primary transition-colors">Inicio</Link></li>
-            <li><Link href="/products" className="hover:text-primary transition-colors">Creaciones</Link></li>
-            <li><Link href="/about" className="hover:text-primary transition-colors">Sobre Mí</Link></li>
-            <li><Link href="/#contact" className="hover:text-primary transition-colors">Contacto</Link></li>
+            <li>
+              <Link href="/" className="hover:text-primary transition-colors">
+                Inicio
+              </Link>
+            </li>
+            <li>
+              <Link href="/products" className="hover:text-primary transition-colors">
+                Creaciones
+              </Link>
+            </li>
+            <li>
+              <Link href="/about" className="hover:text-primary transition-colors">
+                Sobre Mí
+              </Link>
+            </li>
+            <li>
+              <Link href="/#contact" className="hover:text-primary transition-colors">
+                Contacto
+              </Link>
+            </li>
           </ul>
         </div>
         <div>
           <h3 className="text-lg font-bold text-white mb-4">Sígueme</h3>
           <div className="flex space-x-4">
-            <Link href="#" target="_blank" aria-label="Instagram" className="hover:text-primary transition-colors"><Instagram className="w-6 h-6" /></Link>
-            <Link href="#" target="_blank" aria-label="WhatsApp" className="hover:text-primary transition-colors"><WhatsApp className="w-6 h-6" /></Link>
+            <Link
+              href={INSTAGRAM_URL}
+              target="_blank"
+              aria-label="Instagram"
+              className="hover:text-primary transition-colors"
+            >
+              <Instagram className="w-6 h-6" />
+            </Link>
+            <Link
+              href={WHATSAPP_URL}
+              target="_blank"
+              aria-label="WhatsApp"
+              className="hover:text-primary transition-colors"
+            >
+              <WhatsApp className="w-6 h-6" />
+            </Link>
           </div>
         </div>
       </div>
       <div className="text-center text-xs text-stone-500 mt-8 border-t border-stone-700 pt-6">
-        <p>&copy; 2024 Artesana. Todos los derechos reservados.</p>
+        <p>&copy; {new Date().getFullYear()} Artesana. Todos los derechos reservados.</p>
       </div>
     </footer>
   );

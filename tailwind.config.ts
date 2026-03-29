@@ -5,6 +5,8 @@ export default {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/features/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/shared/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
@@ -13,6 +15,26 @@ export default {
         body: ['"Nunito Sans"', 'sans-serif'],
         headline: ['"Cormorant Garamond"', 'serif'],
         code: ['monospace'],
+      },
+      fontSize: {
+        'fluid-xs': 'var(--font-size-xs)',
+        'fluid-sm': 'var(--font-size-sm)',
+        'fluid-base': 'var(--font-size-base)',
+        'fluid-lg': 'var(--font-size-lg)',
+        'fluid-xl': 'var(--font-size-xl)',
+        'fluid-2xl': 'var(--font-size-2xl)',
+        'fluid-3xl': 'var(--font-size-3xl)',
+        'fluid-4xl': 'var(--font-size-4xl)',
+        'fluid-hero': 'var(--font-size-hero)',
+      },
+      spacing: {
+        'fluid-xs': 'var(--space-xs)',
+        'fluid-sm': 'var(--space-sm)',
+        'fluid-md': 'var(--space-md)',
+        'fluid-lg': 'var(--space-lg)',
+        'fluid-xl': 'var(--space-xl)',
+        'fluid-2xl': 'var(--space-2xl)',
+        'fluid-section': 'var(--space-section)',
       },
       colors: {
         background: 'hsl(var(--background))',
